@@ -5,13 +5,13 @@ function App() {
     <div class="h-screen flex flex-col">
       <div
         className="flex-[2]  flex items-center justify-center bg-center bg-cover"
-        style={{ backgroundImage: "url('/assets/images/background-pattern-desktop.svg')" }}
+        style={{   backgroundImage: `url(${import.meta.env.BASE_URL}background-pattern-desktop.svg)`, }}
       >
       </div>
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-100 p-3 bg-white shadow-lg rounded-lg">
 
         <div class=" flex flex-row m-3 gap-4 ">
-          <img class="w-6  h-auto" src="/assets/images/icon-star.svg" alt="My Image" />
+          <img class="w-6  h-auto" src={`${import.meta.env.BASE_URL}assets/images/icon-star.svg`} alt="My Image" />
           <h1 className='text-3xl font-bold '>FAQs</h1>
         </div>
 
